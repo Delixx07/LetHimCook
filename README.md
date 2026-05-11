@@ -1,22 +1,22 @@
-# 🔥 LetHimCook — On-Device AI Recipe Recommender
+# 🔥 LetHimCook — Recipe Recommender
 
-**LetHimCook** adalah aplikasi mobile berbasis Flutter yang dirancang sebagai asisten masak cerdas dengan pendekatan **100% Offline-First**. Aplikasi ini dapat mencari resep secara cerdas dari bahan yang kamu miliki, mengklasifikasikan tingkat kesehatan resep menggunakan *Machine Learning* secara *on-device*, dan menyimpan resep favoritmu ke dalam database lokal tanpa memerlukan koneksi internet!
+**LetHimCook** adalah aplikasi mobile berbasis Flutter yang dirancang sebagai asisten masak cerdas. Aplikasi ini dapat mencari resep secara cerdas dari bahan yang kamu miliki, mengklasifikasikan tingkat kesehatan resep menggunakan *Machine Learning* secara *on-device*, dan menyimpan resep favoritmu ke dalam database lokal t!
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 | Fitur | Deskripsi |
 |---|---|
-| 🧠 **On-Device AI Classification** | Menggunakan **TensorFlow Lite (TFLite)** secara *offline* untuk memprediksi apakah suatu resep termasuk kategori "Sehat" atau "Kurang Sehat" berdasarkan komposisinya. |
-| 🔍 **Smart Recipe Matching** | Mencari resep dari database lokal menggunakan algoritma kecocokan ketat (*strict match*) & toleransi *typo* (`string_similarity`). |
-| 💖 **Favorite & Local Database** | Menyimpan resep masakan favorit ke dalam penyimpanan lokal secara permanen menggunakan **SQLite** (`sqflite`). |
-| ✅ **Pilih Bahan dengan Checkbox** | Tambahkan bahan ke daftar, lalu centang bahan mana saja yang ingin digunakan. AI menolak resep jika bahan kurang terlalu banyak. |
-| 🎨 **UI Modern & Gelap** | Tampilan *dark theme* yang elegan dengan palet warna kustom. |
+|**On-Device AI Classification** | Menggunakan **TensorFlow Lite (TFLite)** secara *offline* untuk memprediksi apakah suatu resep termasuk kategori "Sehat" atau "Kurang Sehat" berdasarkan komposisinya. |
+|**Smart Recipe Matching** | Mencari resep dari database lokal menggunakan algoritma kecocokan ketat (*strict match*) & toleransi *typo* (`string_similarity`). |
+|**Favorite & Local Database** | Menyimpan resep masakan favorit ke dalam penyimpanan lokal secara permanen menggunakan **SQLite** (`sqflite`). |
+|**Pilih Bahan dengan Checkbox** | Tambahkan bahan ke daftar, lalu centang bahan mana saja yang ingin digunakan. AI menolak resep jika bahan kurang terlalu banyak. |
+|**UI Modern & Gelap** | Tampilan *dark theme* yang elegan dengan palet warna kustom. |
 
 ---
 
-## 📱 Alur Aplikasi
+## Alur Aplikasi
 
 ```text
 InputScreen → ResultScreen → DetailScreen
@@ -30,7 +30,7 @@ InputScreen → ResultScreen → DetailScreen
 
 ---
 
-## 🤖 Cara Kerja AI
+## Cara Kerja AI
 
 Aplikasi ini menggunakan 2 jenis kecerdasan buatan (*Artificial Intelligence*) yang berjalan 100% secara lokal di perangkat:
 
@@ -47,7 +47,7 @@ Saat membuka detail resep, aplikasi menggunakan model Machine Learning yang tela
 
 ---
 
-## 🏗️ Struktur Proyek Inti
+##  Struktur Proyek Inti
 
 ```text
 lib/
@@ -69,11 +69,11 @@ assets/
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 ### Prasyarat
 - Flutter SDK (≥ 3.9.2)
-- Karena aplikasi ini memuat *package* Native (C++/NDK) seperti `tflite_flutter` dan `sqflite`, sangat disarankan untuk menjalankan aplikasi pada *real device* Android/iOS atau Emulator yang terkonfigurasi dengan baik.
+- Karena aplikasi ini memuat *package* Native (C++/NDK) seperti `tflite_flutter` dan `sqflite`
 
 ### Langkah-langkah
 
@@ -82,33 +82,32 @@ assets/
    git clone https://github.com/Delixx07/LetHimCook.git
    cd LetHimCook
    ```
-
 2. **Install dependencies**
    ```bash
    flutter pub get
    ```
-
 3. **Jalankan aplikasi**
    ```bash
    flutter run
    ```
 
-> **Catatan:** Semua layanan berjalan 100% secara OFFLINE. Kamu tidak perlu mengatur API Key sama sekali!
-
 ---
 
-## 📷 Dokumentasi
+##  Dokumentasi
 *(Catatan: Tangkapan layar di bawah mungkin merupakan versi UI sebelumnya)*
 
 ### Input Screen
-<img width="474" height="1020" alt="image" src="https://github.com/user-attachments/assets/8459f047-aacb-4ae9-a20f-7a82ce4c83f7" />
-
-### Loading Screen
-<img width="470" height="1027" alt="image" src="https://github.com/user-attachments/assets/54eef8e5-a7c4-46c8-ae22-dcef80b274cb" />
+<img width="483" height="1067" alt="image" src="https://github.com/user-attachments/assets/4c387f44-9eb2-4d16-9d78-94d6d3aa6521" />
 
 ### Result Screen
-<img width="470" height="1028" alt="image" src="https://github.com/user-attachments/assets/9b8ec9a8-e5cc-4a72-84eb-6e74909ceb4a" />
+<img width="480" height="1061" alt="image" src="https://github.com/user-attachments/assets/2f89dcc2-c715-411f-89ef-933e81a6d0ab" />
+
 
 ### Detail Screen
-<img width="473" height="1022" alt="image" src="https://github.com/user-attachments/assets/f7e6ad65-35aa-4cfd-ad2d-0e70359775e0" />
-<img width="465" height="1036" alt="image" src="https://github.com/user-attachments/assets/221404ea-1a8d-4018-8db7-52bd0a01bcd8" />
+<img width="495" height="1070" alt="image" src="https://github.com/user-attachments/assets/ca711dbe-c300-43ba-a517-61651edb593e" />
+<img width="496" height="1063" alt="image" src="https://github.com/user-attachments/assets/b75b59d8-8159-4a32-83f3-09b47b32f4c5" />
+
+### Favorite Screen
+<img width="488" height="1056" alt="image" src="https://github.com/user-attachments/assets/1b793472-6251-449a-ba30-114703a50239" />
+
+
